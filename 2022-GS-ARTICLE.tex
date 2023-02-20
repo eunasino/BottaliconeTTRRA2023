@@ -49,8 +49,7 @@ Anzitutto, a proposito dei microfoni omni-direzionali, c'è da precisare che que
 \begin{figure}[b]
 	\begin{center}
 		\includegraphics[width=.47\textwidth]{img/image1.png}
-		\caption{\textbf{Caratteristiche del microfono di marca Line Audio modello Omni1}. Diagramma polare e risposta in frequenza
-			of spacetime caused by a planetary mass.}
+		\caption{\textbf{Caratteristiche del microfono di marca Line Audio modello Omni1}. Diagramma polare e risposta in frequenza.}
 		\label{gr01}
 	\end{center}
 \end{figure}
@@ -82,16 +81,18 @@ Dunque occorre organizzare le tracce affinchè ciascuna di esse abbia un ruolo p
 Come interfaccia audio è stato utilizzato il mixer digitale di marca Allen e Heat, modello SQ5. I canali sono stati mappati sulla DAW Reaper. Dopo aver impostato i volumi allo stesso livello e acceso le Phantom power su tutti i canali, è stata avviata la registrazione.
 
 \subsection*{Equalizzazione del materiale}
-Terminata la registrazione, le tracce sono state disposte all'interno della DAW con un criterio di raggruppamento che divide le registrazioni in: MAIN(ORTF, Flanks), FIATI(Fiati Left, Fiati Right, Fiati Center), VIOLINI/VIOLE(Secondi Violini, Viole).
-Dopo un ascolto, si inizia a filtrare le registrazioni di ogni singolo punto di ripresa al fine di far emergere il dettaglio della sezione in questione dallo spettro e, al contempo, omettere le frequenze che non ci interessano in quella sezione.
+Terminata la registrazione, le tracce sono state disposte all'interno della DAW con un criterio di raggruppamento che organizza le registrazioni in diverse folder tracks: MAIN(ORTF, Flanks), FIATI(Fiati Left, Fiati Right, Fiati Center), VIOLINI/VIOLE(Secondi Violini, Viole).
+Un'operazione importante è sicuramente filtrare le registrazioni di ogni singolo punto di ripresa al fine di far emergere il dettaglio della sezione in questione dallo spettro e, al contempo, tagliare le frequenze che compromettono questo approccio.
 Ad esempio: Nelle registrazioni dei fiati è utile eliminare le basse frequenze, in quanto la loro utilità è catturare il dettaglio dei fiati nel loro range spettrale e il dettaglio delle membrane dei timpani, i quali servono a sostenere i fiati. Le basse frequenze dei timpani saranno già catturate dai punti di ripresa MAIN, trattandosi di microfoni lontani, dove la loro distanza dalla sorgente sonora permette a quest'ultima di svilupparsi per tutta la sua lunghezza d'onda.
-Di conseguenza filtriamo la sezione dei fiati con un passa basso di terzo ordine a 200Hz, e la ripresa MAIN con un High Shelf a -3dB intorno ai 2500Hz.
+Di conseguenza filtriamo la sezione dei fiati con un passa basso di terzo ordine a 200Hz, e la ripresa MAIN con un High Shelf a -3dB intorno ai 2500Hz per lasciare spazio alla ripresa dei fiati.
 Lo stesso ragionamento va applicato ai contrabbassi, ad esempio.
 
 \subsection*{Trattamento del materiale Mid/Side}
-Perchè trattare il materiale delle registrazioni in Mid Side? In questa configurazione, è possibile gestire l'ambiente come uno spazio trigonometrico, in quanto la gestione dell'ambiente acustico non è solo relativa alle ampiezze delle riflessioni come in configurazione Left/Right tradizionale(la quale non fornisce realmente unn'immagine stereofonica ma solo una sua approssimazione), ma è possibile percepire la profondità di una fonte sonora nello spazio.
+Perchè trattare il materiale delle registrazioni in Mid Side?
+In questa configurazione, si può gestire l'ambiente come uno spazio trigonometrico, in quanto è possibile percepire la profondità di una fonte sonora nello spazio acustico nel quale suona, rimanendo fedeli al concetto di stereofonia.
 Ma procediamo per steps.
-Tutti gli spot utilizzati in fase di registrazione sono mono, dunque il primo step è sicuramente metterli in correlazione con il punto di ripresa MAIN per poterci fare un'idea del posizionamento che  gli vogliamo dare nell'immagine stereo.
+Tutti gli spot utilizzati in fase di registrazione sono mono, dunque la prima cosa da fare è sicuramente metterli in correlazione con il punto di ripresa MAIN per poterci fare un'idea del posizionamento che  gli vogliamo dare nell'immagine stereo.
+Procediamo con il routing Mid/Side creando una folder track che fungerà da matrice per ogni coppia separata. Quindi usiamo le seguenti formule per ottenere e poi miscelare Mid e Side separati
 
 \begin{equation}
 	Mid = Left(-3dB) + Right(-3dB)
@@ -99,9 +100,11 @@ Tutti gli spot utilizzati in fase di registrazione sono mono, dunque il primo st
 \end{equation}
 
 \begin{equation}
-	Side = Left(-3dB) + Right(-3dB)
+	Side = Left(-3dB) - Right(-3dB)
 	\label{eq:mid}
 \end{equation}
+
+Una volta create le folder M/S per ciascuna coppia, equalizziamo separatamente Mid e Side facendo in modo che i bassi dominino nel Mid e viceversa, per evitare cancellazioni di fase tra i due e per orientare le bande dello spettro nella nostra immagine stereo, nella quale avremo il corpo, la presenza e le basse frequenze al centro, e le informazioni stereofoniche (relative quindi all'ambiente nel quale suona l'orchestra) sul Side. Così facendo avremo una configurazione nella quale è possibile percepire al contempo presenza, corpo, dettagli e informazioni relative allo spazio acustico.
 
 
 \vfill\null
