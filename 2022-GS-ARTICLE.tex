@@ -23,18 +23,54 @@
 %-------------------------------------------------------------------- ABSTRACT -
 % The abstract is an external txt file inside the includes folder
 %-------------------------------------------------------------------------------
+
+\begin{table}[htp]
+	\begin{tabular}{ll}
+		\textbf{Sommario} & \textbf{Page} \\
+		\hline
+		\textbf{Introduzione} & 1 \\
+		\hline
+		\textbf{Disposizione dei microfoni} & 1 \\
+		Ruoli di ciascun punto di ripresa & \\
+		L'ORTF & \\
+		I 10 Line Audio modello OM1 & \\
+		\hline
+		\textbf{Bilancio e Valutazione della ripresa} & 2 \\
+		\hline
+		\textbf{Scelta del dominio} & 3 \\
+		Dominio Left/Right & \\
+		Dominio Mid/Side & \\
+		
+	\end{tabular}
+\end{table}
+
+\section*{Introduzione}
+La ricerca si fonda sull'intenzione di comparare due domini di ascolto e analisi nelle loro qualità, con il fine di comprendere quale dei due è in grado di far emergere dalla ripresa maggiori informazioni \textbf{stereofoniche} per l'ascoltatore.
+I due domini presi in esame sono \textbf{Left/Right} e \textbf{Mid/Side}.
+Il titolo «Totalità sonora» fa riferimento ad un organismo sonoro \textbf{solido}, dove questa qualità si esprime, nel caso dell'orchestra, in tre parametri principali:
+\begin{compactitem} 
+	\item Percezione dei dettagli timbrici delle singole sezioni
+	\item Percezione delle caratteristiche  acustiche  dell'auditorium
+	\item Percezione della \textbf{profondità}, ovvero della distanza, di una fonte sonora nello spazio. Quindi non solo percezione della sua direzionalità.
+	\end{compactitem}
+Il principio di solidità è legato al concetto di \textbf{stereofonia}, (dal greco στέρεο = solido, φωνή = voce), il quale è un aspetto qualitativo della \textbf{forma} del suono che si può definire anche come «solido, tridimensionale».
+
+Dunque il quesito è: quali sono le possibilità di analisi, nei due domini in questione, aperte dalle tecniche di ripresa utilizzate nel corso di questa sessione di registrazione?
+In altre parole, quali sono i vantaggi dati dall'utilizzo delle tecniche scelte, e in quale dominio permettono di dare all'ascoltatore un'immagine stereofonica secondo i parametri sopra citati?
+Procediamo descrivendo la mappatura dei microfoni sul palco.
+
 \section*{Disposizione dei microfoni}
 Per la ripresa dell'intera orchestra sono stati utilizzati principalmente 2 tipi di microfoni:
 \begin{compactitem} 
 \item Microfono cardioide di marca Schoeps in configurazione stereofonica ORTF
-\item 10 microfoni omni direzionali di modello OM1 di marca Line Audio organizzati in coppie stereofoniche in configurazione AB
+\item Microfoni omni direzionali di modello OM1 di marca Line Audio organizzati in coppie stereofoniche in configurazione AB
 \end{compactitem}
 I microfoni sono stati disposti nello spazio come descritto nella mappa della figura 1.
 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=.47\textwidth]{img/image2.jpg}
-	\caption{Mappa della disposizione dei microfoni di Gabriele Acquafredda}
+	\caption{Mappa della disposizione dei microfoni realizzata da Gabriele Acquafredda}
 	\label{gs}
 \end{figure}
 
@@ -48,11 +84,12 @@ E' solo in base a questo che la sonorità dell'ambiente e della fonte sonora cam
 
 \subsubsection*{L'ORTF}
 Il punto di ripresa principale è costituito da un ORTF, ovvero una coppia stereofonica semi spaziata formata da due cardioidi posti ad una distanza di 17cm tra di loro (circa la stessa distanza che intercorre tra le orecchie in un cranio umano) inclinate di 110° circa.
-La caratteristica principale del modello ORTF è la sua naturalezza: questa coppia semi-spaziata permette di riprendere l'ambiente in maniera tridimensionale, fornendo informazioni relative alla profondità dell'ambiente acustico. Permette di riprendere le fonti con i loro rispettivi ritardi, fornendo informazioni sulla reale provenienza del suono in base al ritardo che intercorre tra le due capsule microfoniche.
+La caratteristica principale della configurazione ORTF è la sua naturalezza: questa coppia semi-spaziata permette di riprendere una fonte sonora in maniera tridimensionale, fornendo informazioni relative alla profondità dell'ambiente acustico nel quale suona.
 In questo caso, L'ORTF è stato posto di fronte all'orchestra in corrispondenza del pianoforte e del direttore, a fronte palco.
 
 \subsubsection*{I 10 Line Audio modello OM1}
-Osservando il diagramma polare e la risposta in frequenza del microfono omnidirezionale di marca Line Audio modello OM1 mostrato nella figura 2, si può evincere che questo microfono non è lineare in direzionalità: si comporta diversamente a seconda delle frequenze che cattura, ha la tendenza a limitare la sua direzionalità al crescere delle frequenze catturate stringendo la sua figura polare. Dal diagramma si può notare che il microfono è realmente omnidirezionale a 125 e a 2000 Hz, la sua digura polare si stringe di poco a 250 e a 4000 Hz. A 500 e a 8000, in particolar modo sul retro, la figura si stringe ancora sino ad essere attenuata di quasi 10dB a 1KHz e a 16KHz
+Osservando il diagramma polare e la risposta in frequenza del microfono omnidirezionale di marca Line Audio modello OM1 mostrato nella figura 2, si può evincere che questo microfono non è lineare in direzionalità: si comporta diversamente a seconda delle frequenze che cattura, stringendo la sua figura polare. Dal diagramma si può notare che il microfono è realmente omnidirezionale a 125 e a 2000 Hz, la sua figura polare si stringe di poco a 250 e a 4000 Hz. A 500 e a 8000, in particolar modo sul retro, la figura si stringe ancora sino ad essere attenuata di quasi 10dB a 1KHz e a 16KHz.
+Nonostante questa caratteristica, la scelta di utilizzare dei microfoni omnidirezionali è funzionale a fornire una ripresa tridimensionale dell'orchestra, in quanto saranno riprese anche le riflessioni dell'ambiente acustico con le sue caratteristiche riverberanti.
 
 \begin{figure}[b]
 	\begin{center}
@@ -67,52 +104,79 @@ I 10 microfoni sono stati organizzati in coppie stereofoniche AB, la quale preve
 \begin{enumerate}
 \item Una coppia per i primi violini e per le viole, posizionati specularmente nell'orchestra a distanza di 425cm l'uno dall'altro.
 
-\item Tre per i fiati, dei quali uno centrale e due laterali, per allargarne l'immagine. Per questa sezione sono stati utilizzati tre microfoni per due motivi principali:
+\item Per la sezione dei fiati sono stati utilizzati tre microfoni, dei quali uno centrale e due laterali, per due motivi principali:
 \begin{compactitem}
-	\item La sezione è molto ampia(428cm)
-\item Per catturare anche i timpani, e in particolar modo il loro dettaglio, essendo storicamente utilizzati per dare sostegno ai fiati aggiungendo attacco e corpo al  suono.
+	\item La sezione è molto ampia(428cm), dunque per evitare di avere un buco nella ripresa del centro della sezione, è stato aggiunto un microfono al centro del fronte.
+\item Per catturare anche i timpani, e in particolar modo il loro dettaglio timbrico, essendo storicamente utilizzati per dare sostegno ai fiati aggiungendo attacco e corpo al  suono.
 \end{compactitem}
 
-\item Una coppia a distanzata di 28cm per il pianoforte
+\item Una coppia a distanzata di 28cm per il pianoforte. Questa coppia è molto stretta rispetto alle altre perchè ha come intento quello di riprendere il pianoforte come oggetto centrale nell'immagine.
 
 \item Due utilizzati come Flanks, a distanza speculare di 324cm per allargare l'immagine stereo dell'ORTF. Il complesso Flanks + ORTF costituisce la ripresa MAIN dell'orchestra, ovvero quella generale, la quale non serve a catturare i singoli dettagli delle sezioni, quanto a dare un'immagine complessiva frontale del corpo dell'orchestra.
 
 \item Uno come spot per i contrabbassi, posto a 309cm dal flankR. La sua utilità sta nel compensare il loro dettaglio che sicuramente manca al resto. C'è da precisare che questo punto di ripresa non potrebbe dare informazioni sulla profondità della sezione trattandosi di un microfono mono, così come non potrebbe riprenderne fedelmente le basse frequenze essendo un microfono di spot e quindi molto vicino alla sorgente.
 \end{enumerate}
 
-\section*{Gestione del materiale}
-Premesso che:
+\section*{Bilancio e valutazione della ripresa}
+Ora che conosciamo le distanze tra i microfoni, le tecniche e i microfoni utilizzati, le mappature di questi ultimi sul palco, e la posizione delle sezioni dell'orchestra nello spazio, possiamo fare una valutazione complessiva della ripresa in base a tre parametri:
+
+\subsection*{Direzionalità}
+Ovvero capacità della ripresa di rappresentare fedelmente la larghezza di una fonte sonora e la provenienza longitudinale dei suoni. Nel nostro caso, l'intento è quello di riprendere delle sezioni di dimensioni medio-grandi, di conseguenza abbiamo bisogno di utilizzare delle coppie stereofoniche che siano spaziate  a dovere. Attenzione però: il pericolo di distanziare troppo due microfoni tra loro comporta due rischi:
 \begin{compactitem}
-\item Al fine di realizzare un complesso sonoro unitario, il posizionamento dei microfoni è stato pensato per riprendere i dettagli di ogni sezione
-\item Il carattere timbrico di ogni singolo microfono dipende dalla sua posizione nello spazio
+	\item Rappresentare l'immagine più larga di quanto in realtà non sia
+	\item Creare un buco nella ripresa del centro
+\end{compactitem}
+Per questi motivi la ripresa di una sezione larga come quella dei fiati è stata rafforzata con un microfono centrale.
+Per questi motivi la ripresa principale dell'ORTF è stata allargata con dei Flanks
+Per questi motivi la ripresa del pianoforte è molto più stretta rispetto alle altre
+
+\subsection*{Profondità}
+Ovvero la capacità della  ripresa di rappresentare fedelmente la posizione delle sezioni dell'orchestra sull'asse Z, nonchè la terza dimensione: quella della profondità.
+Nel nostro caso, questa percezione è rappresentata dalla correlazione dei diversi punti di ripresa con quello MAIN: sovrapponendo, ad esempio, la ripresa dei microfoni dedicati alla sezione dei fiati con quella principale, essendo quest'ultima più distante dalla sorgente, l'ascoltatore acquisisce informazioni relative alla posizione sul fondo del palco.
+
+\subsection*{L'ambiente}
+Ovvero il corretto bilancio tra la definizione timbrica delle sezioni e la loro interazione con l'auditorium. Questo dipende principalmente da due fattori:
+\begin{compactitem}
+	\item L'acustica dello spazio
+	\item La distanza dei microfoni dalla sorgente
+\end{compactitem}
+Nel nostro caso, entrambe le condizioni sono favorevoli ad un buon bilancio del riverbero, in quanto:
+\begin{compactitem}
+	\item L'acustica dell'auditorium è estremamente curata(nella forma, nelle sedute, nell'assorbimento e nella diffusione)
+	\item La contemporanea ripresa della sorgente con microfoni ravvicinati(punti di ripresa delle singole sezioni) e microfoni lontani (punto di ripresa MAIN) permette un buon bilancio
 \end{compactitem}
 
-Occorre organizzare le tracce affinchè ciascuna di esse abbia un ruolo preciso come componente del prodotto finale. Ma con quale criterio? Quale dominio di analisi restituisce l'immagine stereofonica più verosimile e solida? Le possibilità analizzate all'interno di questa ricerca sono due: dominio Left/Right e dominio Mid/Side
+\section*{Scelta del dominio}
+Ora che abbiamo constatato che le tecniche di ripresa utilizzate rispecchiano il concetto di solidità desiderato al fine di ottenere una rappresentazione stereofonica del complesso orchestra/auditorium, analizziamo i due domini presi in esame per comprendere quale dei due è più idoneo all'ascolto delle riprese.
 
 \subsection*{Dominio Left/Right}
-Organizzare le tracce al fine di ascoltarle nel semplice dominio Left/Right vuol dire disporle longitudinalmente nell'immagine di ascolto senza alcuna informazione stereofonica relativa all'ambiente acustico nel quale suona l'orchestra o alla profondità della stessa.
-Organizzare le tracce in questo modo equivale a creare un'immagine bidimensionale dell'orchestra: larghezza ed ampiezza, ma senza profondità.
-É chiaro che le possibilità di analisi e di gestione del materiale sono limitate
+Ascoltare la ripresa nel semplice dominio Left/Right vuol dire disporre le registrazioni effettuate longitudinalmente nell'immagine di ascolto senza sfruttare al meglio le informazioni stereofoniche relative all'ambiente acustico nel quale suona l'orchestra o alla profondità della stessa.
+Organizzare le tracce in questo modo equivale a creare un'immagine bidimensionale dell'orchestra: larghezza ed ampiezza, ma con poca profondità.
+É chiaro che le possibilità di analisi e di gestione del materiale sono di conseguenza limitate
 
 \subsection*{Dominio Mid/Side}
 Perchè analizzare il materiale delle registrazioni in Mid Side?
-In questa configurazione, si può gestire l'ambiente come uno spazio trigonometrico, in quanto è possibile percepire la profondità di una fonte sonora nello spazio acustico nel quale suona, rimanendo fedeli al concetto di stereofonia.
+In questa configurazione, si può indagare l'ambiente come uno spazio trigonometrico, in quanto è possibile percepire la profondità dell'orchestra nell'auditorium nel quale suona, rimanendo fedeli al concetto di stereofonia.
 Indagare il materiale in Mid/Side equivale a poter dominare una gestione tridimensionale dello spazio, e ovviamente le possibilità di analisi aumentano.
-In fase d'ascolto, è utile mettere in correlazione le diverse coppie stereo con il punto di ripresa MAIN per potersi fare un'idea del posizionamento che  queste assumono nell'immagine stereo.
+In fase d'ascolto, è utile mettere in correlazione le diverse coppie stereo con il punto di ripresa MAIN per potersi fare un'idea del posizionamento che  queste assumono nella profondità dell'immagine stereofonica.
+Di seguito alcuni esempi:
+\begin{compactitem} 
+	\item [I FIATI] Mettendo in solo il complesso MAIN, si può notare come la terza dimensione si allunghi quando viene acceso il gruppo dei fiati. Si ha come l'impressione che un velo teso di suono venga allungato in profondità. Si rafforza il Mid e si percepisce meglio il dettaglio timbrico dei fiati e dei timpani.
+	\item [VIOLINI E VIOLE] Idem in questo caso, attivando il gruppo AB  di Violini e Viole e sovrapponendolo al complesso MAIN, il complesso acquisisce profondità e si percepisce la totalità dell'orchestra. In questo caso il Mid è più debole rispetto ai fiati e andrebbe rafforzato, ma comunque il risultato è quello di uno spazio tridimensionale.
+	\end{compactitem}
+Il Mid/Side è una configurazione grazie alla quale è possibile percepire al contempo tutte le informazioni stereofoniche riprese in fase di registrazione: presenza, corpo, dettagli timbrici e profondità delle sezioni.
 
-Una volta create le folder M/S per ciascuna coppia, equalizziamo separatamente Mid e Side facendo in modo che le frequenze gravi dominino nel Mid e viceversa, per evitare cancellazioni di fase tra i due e per orientare le bande dello spettro nella nostra immagine stereo, nella quale avremo il corpo, la presenza e le basse frequenze al centro, e le informazioni stereofoniche (relative quindi all'ambiente nel quale suona l'orchestra) sul Side. Così facendo avremo una configurazione nella quale è possibile percepire al contempo presenza, corpo, dettagli e informazioni relative allo spazio acustico.
-
-\subsection*{Equalizzazione del materiale}
-L'indagine del materiale in Mid/Side apre diversi vantaggi relativi alla gestione del materiale, come ad esempio sull'equalizzazione. Raggruppiamo le tracce in diverse folder tracks:
+\subsection*{Gestione del materiale}
+L'indagine del materiale in Mid/Side non solo può far emergere le informazioni stereofoniche della ripresa, ma apre diversi vantaggi relativi alla gestione del materiale, come ad esempio sull'equalizzazione. Raggruppiamo le tracce in diverse folder tracks:
 \begin{compactitem} 
 	\item MAIN(ORTF, Flanks)
 	\item FIATI(Fiati Left, Fiati Right, Fiati Center)
 	\item VIOLINI/VIOLE(Secondi Violini, Viole).
 	\item PIANOFORTE (Piano Left, Piano Right)
 	\end{compactitem}
-Con il fine di far emergere il dettaglio delle diverse sezioni dal timbro delle regitrazioni, le ho filtrate  in maniera non invasiva.
-Ad esempio: Nelle registrazioni dei microfoni utilizzati per riprendere la sezione dei fiati ho attenuato le frequenze gravi, in quanto l'utilità di questo punto di ripresa è riprendere il dettaglio timbrico dei fiati e delle membrane dei timpani, i quali servono a sostenere i fiati. Le frequenze gravi dei timpani saranno già riprese fedelmente dai microfoni MAIN, trattandosi di microfoni lontani, dove la loro distanza dalla sorgente sonora permette a quest'ultima di svilupparsi per tutta la sua lunghezza d'onda.
-Applico lo stesso ragionamento ai contrabbassi: attenuo le frequenze gravi dalle registrazioni del microfono utilizzato come spot, per mettere in risalto il suono timbrico della sezione dei contrabbassi.
+Con il fine di far emergere il dettaglio delle diverse sezioni dal timbro delle regitrazioni, le si può filtrate  in maniera non invasiva.
+Ad esempio: Nelle riprese dei fiati è possibile attenuare le frequenze gravi, in quanto l'utilità di questo punto di ripresa sta anche nel riprendere il dettaglio timbrico dei fiati e delle membrane dei timpani, i quali servono a sostenere i fiati. Le frequenze gravi dei timpani saranno già riprese fedelmente dai microfoni MAIN, trattandosi di microfoni lontani, dove la loro distanza dalla sorgente sonora permette a quest'ultima di svilupparsi per tutta la sua lunghezza d'onda.
+Si potrebbe applicare lo stesso ragionamento ai contrabbassi: attenuare le frequenze gravi dalle registrazioni del microfono utilizzato come spot, per mettere in risalto il suono timbrico della sezione.
 
 
 \vfill\null
@@ -120,22 +184,6 @@ Applico lo stesso ragionamento ai contrabbassi: attenuo le frequenze gravi dalle
 \newpage % USE NEWPAGE TO FORCE COLUMNN INTERRUPTION
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-
-\begin{table}[htp]
-\begin{tabular}{ll}
-\textbf{Sommario} & \textbf{Page} \\
-\hline
-\textbf{Disposizione dei microfoni} & 1 \\
-Ruoli di ciascun punto di ripresa & \\
-L'ORTF & \\
-I 10 Line Audio modello Omni1 & \\
-\hline
-\textbf{Gestione del materiale} & 2 \\
-Sessione di registrazione & \\
-Trattamento del materiale Mid/Side & \\
-
-\end{tabular}
-\end{table}
 
 %--------------------------------------------
 %----------------larghezza massima del codice
